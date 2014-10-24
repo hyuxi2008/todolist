@@ -11,5 +11,5 @@ Setup the endpoint and the key for the test by editing `test.properties`
 
 | Method | Path | Parameters | Request Headers | Returns
 |------|----------|--------|---------|-------
-| POST | `/tasks` | ```javascript {"title" : "task title", "body" : "task body"} ``` | `Content-Type` : `application/json`, `X-Todolist-Key" : `yourkey` | string
+| POST | `/tasks` | `{"title" : "task title", "body" : "task body"}` | `Content-Type` : `application/json`, `X-Todolist-Key" : `yourkey` | string
 

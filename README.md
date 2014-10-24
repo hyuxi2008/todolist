@@ -1,5 +1,4 @@
 A simple todolist API
-
 =====================
 
 A simple API to create/read/update/delete, mark as done/undone and search todo tasks.

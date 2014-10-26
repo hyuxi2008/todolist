@@ -16,8 +16,8 @@ Setup the endpoint and the key for the test by editing `test.properties`
 POST /tasks
 
 #####Request Headers
-Content-Type : application/json
-X-Todolist-Key : yourkey
+* Content-Type : application/json
+* X-Todolist-Key : yourkey
 
 #####Body
 ```javascript
@@ -25,12 +25,12 @@ X-Todolist-Key : yourkey
 ```
 
 #####Returns
-A string id for the newly created todo
-type : string
-Status : 201
+* A string id for the newly created todo
+* type : string
+* Status : 201
     
 #####Example output
-09e3abbd-6a8a-4d40-8ed9-effb4f28ae86
+    09e3abbd-6a8a-4d40-8ed9-effb4f28ae86
     
     
 ### Get todo
@@ -38,15 +38,15 @@ Status : 201
 GET /tasks/{taskId}
 
 #####Request Headers
-X-Todolist-Key : yourkey
+* X-Todolist-Key : yourkey
 
 #####Body
 empty
 
 #####Returns
-The todo with id "taskId" 
-type : json
-Status : 200 if the item exists; 404 otherwise
+* The todo with id "taskId" 
+* type : json
+* Status : 200 if the item exists; 404 otherwise
     
 #####Example output:
 
@@ -66,16 +66,15 @@ Status : 200 if the item exists; 404 otherwise
 GET /tasks/?query={query}&from={from}&limit={limit}
 
 #####Request Headers
-X-Todolist-Key : yourkey
+* X-Todolist-Key : yourkey
 
 #####Body
 empty
 
 #####Returns
-A list of todos matching the input query.
-Matches on field "title" are returned first. 
-type : json
-Status : 200
+* A list of todos matching the input query. Matches on field "title" are returned first. 
+* type : json
+* Status : 200
     
 #####Example output:
 
@@ -115,8 +114,8 @@ Status : 200
 PUT /tasks/{taskId}
 
 #####Request Headers
-Content-Type : application/json
-X-Todolist-Key : yourkey
+* Content-Type : application/json
+* X-Todolist-Key : yourkey
 
 #####Body
 ```javascript
@@ -130,9 +129,9 @@ X-Todolist-Key : yourkey
 ```
 
 #####Returns
-The modified task
-type : json
-Status : 200 if the item exists; 404 otherwise
+* The modified task
+* type : json
+* Status : 200 if the item exists; 404 otherwise
     
 #####Example output:
 
@@ -151,15 +150,15 @@ Status : 200 if the item exists; 404 otherwise
 PUT /tasks/{taskId}/done
 
 #####Request Headers
-X-Todolist-Key : yourkey
+* X-Todolist-Key : yourkey
 
 #####Body
 empty
 
 #####Returns
-The modified task
-type : json
-Status : 200 if the item exists; 404 otherwise
+* The modified task
+* type : json
+* Status : 200 if the item exists; 404 otherwise
     
 #####Example output:
 
@@ -178,15 +177,15 @@ Status : 200 if the item exists; 404 otherwise
 PUT /tasks/{taskId}/undone
 
 #####Request Headers
-X-Todolist-Key : yourkey
+* X-Todolist-Key : yourkey
 
 #####Body
 empty
 
 #####Returns
-The modified task
-type : json
-Status : 200 if the item exists; 404 otherwise
+* The modified task
+* type : json
+* Status : 200 if the item exists; 404 otherwise
     
 #####Example output:
 
@@ -206,15 +205,15 @@ Status : 200 if the item exists; 404 otherwise
 DELETE /tasks/{taskId}
 
 #####Request Headers
-X-Todolist-Key : yourkey
+* X-Todolist-Key : yourkey
 
 #####Body
 empty
 
 #####Returns
-Empty body
-type : void
-Status : 204 if the item exists; 404 otherwise
+* Empty body
+* type : void
+* Status : 204 if the item exists; 404 otherwise
     
 
 

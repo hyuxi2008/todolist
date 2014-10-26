@@ -13,11 +13,11 @@ Setup the endpoint and the key for the test by editing `test.properties`
 
 ### Create todo
  
-    POST /tasks
+POST /tasks
 
 #####Request Headers
-    Content-Type : application/json
-    X-Todolist-Key : yourkey
+Content-Type : application/json
+X-Todolist-Key : yourkey
 
 #####Body
 ```javascript
@@ -25,9 +25,9 @@ Setup the endpoint and the key for the test by editing `test.properties`
 ```
 
 #####Returns
-    A string id for the newly created todo
-    type : string
-    Status : 201
+A string id for the newly created todo
+type : string
+Status : 201
     
 #####Example output
 09e3abbd-6a8a-4d40-8ed9-effb4f28ae86
@@ -35,18 +35,18 @@ Setup the endpoint and the key for the test by editing `test.properties`
     
 ### Get todo
  
-    GET /tasks/{taskId}
+GET /tasks/{taskId}
 
 #####Request Headers
-    X-Todolist-Key : yourkey
+X-Todolist-Key : yourkey
 
 #####Body
-    empty
+empty
 
 #####Returns
-    The todo with id "taskId" 
-    type : json
-    Status : 200 if the item exists; 404 otherwise
+The todo with id "taskId" 
+type : json
+Status : 200 if the item exists; 404 otherwise
     
 #####Example output:
 
@@ -63,19 +63,19 @@ Setup the endpoint and the key for the test by editing `test.properties`
 
 ### Search todos
  
-    GET /tasks/?query={query}&from={from}&limit={limit}
+GET /tasks/?query={query}&from={from}&limit={limit}
 
 #####Request Headers
-    X-Todolist-Key : yourkey
+X-Todolist-Key : yourkey
 
 #####Body
-    empty
+empty
 
 #####Returns
-    A list of todos matching the input query.
-    Matches on field "title" are returned first. 
-    type : json
-    Status : 200
+A list of todos matching the input query.
+Matches on field "title" are returned first. 
+type : json
+Status : 200
     
 #####Example output:
 
@@ -112,11 +112,11 @@ Setup the endpoint and the key for the test by editing `test.properties`
 
 ### Update todo
  
-    PUT /tasks/{taskId}
+PUT /tasks/{taskId}
 
 #####Request Headers
-    Content-Type : application/json
-    X-Todolist-Key : yourkey
+Content-Type : application/json
+X-Todolist-Key : yourkey
 
 #####Body
 ```javascript
@@ -130,9 +130,9 @@ Setup the endpoint and the key for the test by editing `test.properties`
 ```
 
 #####Returns
-    The modified task
-    type : json
-    Status : 200 if the item exists; 404 otherwise
+The modified task
+type : json
+Status : 200 if the item exists; 404 otherwise
     
 #####Example output:
 
@@ -148,18 +148,18 @@ Setup the endpoint and the key for the test by editing `test.properties`
     
 ### Set todo as done
  
-    PUT /tasks/{taskId}/done
+PUT /tasks/{taskId}/done
 
 #####Request Headers
-    X-Todolist-Key : yourkey
+X-Todolist-Key : yourkey
 
 #####Body
 empty
 
 #####Returns
-    The modified task
-    type : json
-    Status : 200 if the item exists; 404 otherwise
+The modified task
+type : json
+Status : 200 if the item exists; 404 otherwise
     
 #####Example output:
 
@@ -175,18 +175,18 @@ empty
 
 ### Set todo as undone
  
-    PUT /tasks/{taskId}/undone
+PUT /tasks/{taskId}/undone
 
 #####Request Headers
-    X-Todolist-Key : yourkey
+X-Todolist-Key : yourkey
 
 #####Body
 empty
 
 #####Returns
-    The modified task
-    type : json
-    Status : 200 if the item exists; 404 otherwise
+The modified task
+type : json
+Status : 200 if the item exists; 404 otherwise
     
 #####Example output:
 
@@ -203,18 +203,18 @@ empty
 
 ### Delete todo
  
-    DELETE /tasks/{taskId}
+DELETE /tasks/{taskId}
 
 #####Request Headers
-    X-Todolist-Key : yourkey
+X-Todolist-Key : yourkey
 
 #####Body
 empty
 
 #####Returns
-    Empty body
-    type : void
-    Status : 204 if the item exists; 404 otherwise
+Empty body
+type : void
+Status : 204 if the item exists; 404 otherwise
     
 
 

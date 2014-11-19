@@ -56,7 +56,7 @@ empty
     "title" : "task title", 
     "body" : "task body",
     "user" : "taskowner",
-    "done" : "false"
+    "done" : false
 }
 ```
     
@@ -86,14 +86,14 @@ empty
             "title" : "task title", 
             "body" : "task body",
             "user" : "taskowner",
-            "done" : "false"
+            "done" : false
         },
         {
             "id" : "fe371116-a9aa-4e6f-a193-975109ba8c75", 
             "title" : "another task title", 
             "body" : "another task body",
             "user" : "taskowner",
-            "done" : "false"
+            "done" : false
         }
         ...
     ],
@@ -124,7 +124,7 @@ PUT /tasks/{taskId}
     "title" : "new task title", 
     "body" : "new task body",
     "user" : "taskowner",
-    "done" : "false"
+    "done" : false
 }
 ```
 
@@ -141,7 +141,7 @@ PUT /tasks/{taskId}
     "title" : "new task title", 
     "body" : "new task body",
     "user" : "taskowner",
-    "done" : "false"
+    "done" : false
 }
 ```
     
@@ -168,7 +168,7 @@ empty
     "title" : "new task title", 
     "body" : "new task body",
     "user" : "taskowner",
-    "done" : "true"
+    "done" : true
 }
 ```    
 
@@ -195,7 +195,7 @@ empty
     "title" : "new task title", 
     "body" : "new task body",
     "user" : "taskowner",
-    "done" : "false"
+    "done" : false
 }
 ```      
     
